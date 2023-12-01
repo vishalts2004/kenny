@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #3a3a3a, #1a1a1a);
+}
+
+.App {
+  background: linear-gradient(45deg, #2e2e2e, #141414);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 10px 10px 42px 0px #1a1a1a;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(45deg, #d9534f, #b52b27);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 18px;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #c9302c, #a52724);
+  transform: scale(1.05); /* Add a scaling effect on hover */
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #2e2e2e, #141414);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 42px 0px #1a1a1a;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.Login h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  animation: slideInDown 0.8s forwards; /* Slide in from top animation */
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.Login input {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  animation: fadeIn 0.8s forwards; /* Fade in input fields */
+}
+
+.Login button {
+  cursor: pointer;
+  background: linear-gradient(45deg, #d9534f, #b52b27);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+  animation: slideInUp 0.8s forwards; /* Slide in from bottom animation */
+}
+
+.Login button:hover {
+  background: linear-gradient(45deg, #c9302c, #a52724);
+  transform: scale(1.05);
+}
+
+.category-buttons button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #5bc0de, #2aabd2);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  transition: background 0.3s, transform 0.2s;
+  animation: fadeIn 0.8s forwards; /* Fade in category buttons */
+}
+
+.category-buttons button:hover {
+  background: linear-gradient(45deg, #46b8da, #249ed1);
+  transform: scale(1.05);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
